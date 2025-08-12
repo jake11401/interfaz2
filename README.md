@@ -31,6 +31,10 @@ void loop() {   // Se repite infinitamente
   //delay(1000);             // Esperar 1 segundo
 }
 ```
+<a href="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/led%20parpadeante.png>Led parpadeante.
+</a>
+
+
 ### Ejercicio n°3 Arduino: "Control pulsador"
 
 ```js
@@ -46,6 +50,10 @@ void loop() {
   }
 }
 ```
+<a href="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/control%20pulsador.png>Control pulsador.
+</a>
+
+
 ### Ejercicio n°4 Arduino: "Potenciometro"
 
 ```js
@@ -58,6 +66,10 @@ void loop() {
   analogWrite(9, brillo);               // Ajustar brillo
 }
 ```
+<a href="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/potenciometro.png>Potenciometro.
+</a>
+
+
 
 ### ejercicio n°5 Arduino: "Semáforo"
 
@@ -107,5 +119,9 @@ void loop() {
   delay(2000); // 2 segundos
 }
 ```
+<a href="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/semaforo.png>Semaforo.
+</a>
+
+
 
 
