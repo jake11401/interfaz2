@@ -31,8 +31,8 @@ void loop() {   // Se repite infinitamente
   //delay(1000);             // Esperar 1 segundo
 }
 ```
-<a href="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/led%20parpadeante.png>Led parpadeante.
-</a>
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/led%20parpadeante.png"
+ /<
 
 
 ### Ejercicio n°3 Arduino: "Control pulsador"
@@ -50,8 +50,8 @@ void loop() {
   }
 }
 ```
-<a href="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/control%20pulsador.png>Control pulsador.
-</a>
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/control%20pulsador.png"
+ /<
 
 
 ### Ejercicio n°4 Arduino: "Potenciometro"
@@ -66,8 +66,8 @@ void loop() {
   analogWrite(9, brillo);               // Ajustar brillo
 }
 ```
-<a href="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/potenciometro.png>Potenciometro.
-</a>
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/potenciometro.png"
+ /<
 
 
 
@@ -119,8 +119,8 @@ void loop() {
   delay(2000); // 2 segundos
 }
 ```
-<a href="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/semaforo.png>Semaforo.
-</a>
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/semaforo.png"
+ /<
 
 
 
