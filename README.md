@@ -32,7 +32,7 @@ void loop() {   // Se repite infinitamente
 }
 ```
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/led%20parpadeante.png"
- /<
+ />
 
 
 ### Ejercicio n°3 Arduino: "Control pulsador"
@@ -51,7 +51,7 @@ void loop() {
 }
 ```
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/control%20pulsador.png"
- /<
+ />
 
 
 ### Ejercicio n°4 Arduino: "Potenciometro"
@@ -67,7 +67,7 @@ void loop() {
 }
 ```
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/potenciometro.png"
- /<
+ />
 
 
 
@@ -120,7 +120,7 @@ void loop() {
 }
 ```
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/semaforo.png"
- /<
+ />
 
 
 
