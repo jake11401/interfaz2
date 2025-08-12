@@ -12,7 +12,7 @@ void loop() {
 }
 ```
 
-### Ejercicio n°3 Arduino: "Led Parpadeante"
+### Ejercicio n°2 Arduino: "Led Parpadeante"
 
 ```js
 void setup() {  // Configuración inicial (ej: pines como entrada/salida)
@@ -31,7 +31,7 @@ void loop() {   // Se repite infinitamente
   //delay(1000);             // Esperar 1 segundo
 }
 ```
-### Ejercicio n°4 Arduino: "Control pulsador"
+### Ejercicio n°3 Arduino: "Control pulsador"
 
 ```js
 void setup() {
@@ -46,7 +46,7 @@ void loop() {
   }
 }
 ```
-### Ejercicio n°5 Arduino: "Potenciometro"
+### Ejercicio n°4 Arduino: "Potenciometro"
 
 ```js
 void setup() {
@@ -59,7 +59,7 @@ void loop() {
 }
 ```
 
-### ejercicio n°2 Arduino: "Semáforo"
+### ejercicio n°5 Arduino: "Semáforo"
 
 ```js
 // C++ code - Semáforo Autos y Peatones
