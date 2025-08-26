@@ -247,9 +247,8 @@ void draw()
   ellipse(width/1.5, height/2, d, d);
 }
 ```
-<img width="1504" height="808" alt="image" src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/processing.png"
-/>
-
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/processing.png"
+ />
 
 
 
