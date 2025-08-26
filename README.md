@@ -201,6 +201,8 @@ void loop(){
 delay(50);
 }
 ```
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/potenciador%20arduino.png"
+ />
 ## Codigo processing
 import processing.serial.*;
 
@@ -245,7 +247,7 @@ void draw()
   ellipse(width/1.5, height/2, d, d);
 }
 ```
-<img width="1504" height="808" alt="image" src="https://github.com/user-attachments/assets/598c1714-9a98-44db-a0d3-47ef00788814" />
+<img width="1504" height="808" alt="image" src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/processing.png" />
 
 
 
