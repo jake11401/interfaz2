@@ -184,7 +184,7 @@ void loop() {
 }
 ```
 
-### Ejercicio n°7 Arduino y processing "Led con potenciador"
+### Ejercicio n°7 Arduino y processing "Potenciador"
 
 ## codigo arduino
 ```js
@@ -202,7 +202,6 @@ delay(50);
 }
 ```
 ## Codigo processing
-```js
 import processing.serial.*;
 
 Serial myPort;  // Crear objeto de la clase Serial
@@ -211,12 +210,12 @@ int sensorVal = 0;
 
 void setup()
 {
-  background(0); 
+  //background(0); 
   //fullScreen(P3D);
    size(1080, 720);
    noStroke();
   noFill();
-  String portName = "COM3";// Cambia el número (en este caso) para que coincida con el puerto correspondiente conectado a tu Arduino. 
+  String portName = "COM4";// Cambia el número (en este caso) para que coincida con el puerto correspondiente conectado a tu Arduino. 
 
   //myPort = new Serial(this, "/dev/cu.usbmodem1101", 9600);
   myPort = new Serial(this, Serial.list()[0], 9600);
@@ -241,9 +240,13 @@ void draw()
   // Escala el valor de mouseX de 0 a 640 a un rango entre 40 y 300
   float d = map(sensorVal, 0, width, 40,500);
   fill(255, c, 0);
-  ellipse(width/2, height/2, d, d);   
+  ellipse(width/2, height/2, d, d); 
+  ellipse(width/3, height/2, d, d);
+  ellipse(width/1.5, height/2, d, d);
 }
 ```
+<img width="1504" height="808" alt="image" src="https://github.com/user-attachments/assets/598c1714-9a98-44db-a0d3-47ef00788814" />
+
 
 
 
