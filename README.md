@@ -406,6 +406,9 @@ void loop() {
 ```
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/Captura%20de%20pantalla%202025-10-07%20114034.png"
  />
+ <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/1000102739.jpg"
+ />
+
 
 
 
