@@ -277,6 +277,9 @@ void loop() {
   }
 }
 ```
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/ifelse.png.png"
+ />
+
 ### Ejercicio N°10 Processing: "Botonera"
 ```js
 // Importamos librería para comunicación serial
@@ -359,6 +362,9 @@ void playTrack(int index) {
   currentTrack = index;
 }
 ```
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/botonera1.png"
+ />
+
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/botonera.jpg"
  />
 
