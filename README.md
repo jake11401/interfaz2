@@ -186,7 +186,7 @@ void draw()
   ellipse(width/1.5, height/2, d, d);
 }
 ```
-<img src="https://raw.githubusercontent.com/jake11401/interfaz2/b2e210a6d19f9bc65871726ac4d1bb9c8ce09142/Img/processing.png"
+<img src="file:///C:/Users/Maichaiil/Downloads/processing.png"
  />
 
 
