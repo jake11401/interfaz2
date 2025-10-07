@@ -143,6 +143,7 @@ delay(50);
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/potenciador%20arduino.png"
  />
 ## Codigo processing
+```
 import processing.serial.*;
 
 Serial myPort;  // Crear objeto de la clase Serial
@@ -186,8 +187,174 @@ void draw()
   ellipse(width/1.5, height/2, d, d);
 }
 ```
-<img src="file:///C:/Users/Maichaiil/Downloads/processing.png"
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/processing.png"
  />
+ ### Ejercicio N°7 Arduino+Processing: "Pulsador"
+ ```js
+int buttonPin = 2;  // Pin del botón
+int buttonState = 0;
+
+void setup() {
+  pinMode(buttonPin, INPUT_PULLUP); // Botón con resistencia interna
+  Serial.begin(9600);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+
+  if (buttonState == HIGH) {   // Botón presionado
+    Serial.println(1);        // Enviar un "1" a Processing
+    delay(200);               // Evitar rebotes
+  }
+}
+```
+### Ejercicio N°8 Arduino+Processing: "Pulsador+Potenciometro"
+```js
+import processing.serial.*;
+
+Serial myPort;
+ArrayList<PVector> circles; 
+
+void setup() {
+  size(1920, 1080);
+  background(100);
+  
+  // Ajusta el nombre del puerto según tu Arduino
+  println(Serial.list());
+  //myPort = new Serial(this, "/dev/cu.usbmodem1101", 9600);
+  myPort = new Serial(this, Serial.list()[0], 9600);
+  
+  circles = new ArrayList<PVector>();
+}
+
+void draw() {
+  //background(0);
+  
+  // Dibujar círculos almacenados
+  fill(0, 0, 0);
+  //noStroke();
+  stroke(0, 150, 155);
+  for (PVector c : circles) {
+    ellipse(c.x, c.y, 100, 5);
+  }
+  
+  // Revisar si llega algo de Arduino
+  if (myPort.available() > 0) {
+    String val = myPort.readStringUntil('\n');
+    if (val != null) {
+      val = trim(val);
+      if (val.equals("1")) {
+        // Cada vez que se aprieta el botón, agregar un círculo en posición aleatoria
+        circles.add(new PVector(random(width), random(height)));
+      }
+    }
+  }
+}
+```
+### Ejercicio N°9 Arduino: "If/Else"
+```js
+int buttonPin = 2;  // Pin del botón
+int buttonState = 0;
+
+void setup() {
+  pinMode(buttonPin, INPUT_PULLUP); // Botón con resistencia interna
+  Serial.begin(9600);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+
+  if (buttonState == HIGH) {   // Botón presionado
+    Serial.println(1);        // Enviar un "1" a Processing
+    delay(200);               // Evitar rebotes
+  }
+}
+```
+### Ejercicio N°10 Processing: "Botonera"
+```js
+// Importamos librería para comunicación serial
+import processing.serial.*;
+// Importamos librería Minim para manejar audio
+import ddf.minim.*;
+
+// Declaramos el objeto serial para comunicarnos con Arduino
+Serial myPort;
+// Objeto principal de Minim
+Minim minim;
+// Array de reproductores de audio (3 pistas)
+AudioPlayer[] players;
+// Variable para guardar el índice de la pista que está sonando
+int currentTrack = -1;  // -1 significa que no hay pista activa al inicio
+
+void setup() {
+  size(400, 200); // Ventana de 400x200 píxeles
+ 
+  // --- Configuración del puerto serial ---
+  printArray(Serial.list()); // Muestra en consola la lista de puertos disponibles
+  myPort = new Serial(this, Serial.list()[0], 9600); // Abrimos el primer puerto de la lista a 9600 baudios
+ 
+  // --- Configuración de audio ---
+  minim = new Minim(this); // Inicializamos Minim
+  players = new AudioPlayer[3]; // Creamos un array de 3 reproductores
+ 
+  // Cargamos los 3 archivos de audio desde la carpeta "data"
+  players[0] = minim.loadFile("1.mp3", 2048);
+  players[1] = minim.loadFile("2.mp3", 2048);
+  players[2] = minim.loadFile("3.mp3", 2048);
+}
+
+void draw() {
+  background(0); // Fondo negro
+  fill(255);     // Color blanco para el texto
+  textSize(16);  // Tamaño del texto
+ 
+  // Mostramos en pantalla qué botón está activo
+  text("Botón actual: " + (currentTrack == -1 ? "ninguno" : currentTrack), 20, 40);
+}
+
+void serialEvent(Serial myPort) {
+  // Leemos la cadena que llega desde Arduino hasta el salto de línea
+  String inString = trim(myPort.readStringUntil('\n'));
+ 
+  // Si no llega nada, salimos
+  if (inString == null) return;
+
+  // --- Si el mensaje recibido empieza con "B" significa que es un botón ---
+  if (inString.startsWith("B")) {
+    // Quitamos la letra "B" y separamos el mensaje en partes (ejemplo "0:0")
+    String[] parts = split(inString.substring(1), ':');
+   
+    // Si realmente recibimos dos partes (índice y estado)
+    if (parts.length == 2) {
+      int buttonIndex = int(parts[0]); // Número del botón (0,1,2)
+      int state = int(parts[1]);       // Estado del botón (0 = presionado, 1 = suelto)
+     
+      // Si el botón fue presionado (LOW = 0 en Arduino)
+      if (state == 0) {
+        playTrack(buttonIndex); // Llamamos a la función para reproducir la pista correspondiente
+      }
+    }
+  }
+}
+
+// --- Función que reproduce una pista según el botón ---
+void playTrack(int index) {
+  // Si ya había una pista sonando, la pausamos y la rebobinamos al inicio
+  if (currentTrack != -1 && players[currentTrack].isPlaying()) {
+    players[currentTrack].pause();
+    players[currentTrack].rewind();
+  }
+ 
+  // Reproducimos en bucle la pista seleccionada
+  players[index].loop();
+ 
+  // Actualizamos la variable para saber cuál es la pista activa
+  currentTrack = index;
+}
+```
+
+
+
 
 
 
