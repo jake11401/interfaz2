@@ -33,6 +33,8 @@ void loop() {   // Se repite infinitamente
 ```
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/led%20parpadeante.png"
  />
+ <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/led%20parpadeante%20fi.jpg"
+ />
 
 
 ### Ejercicio n°3 Arduino: "Control pulsador"
@@ -68,7 +70,8 @@ void loop() {
 ```
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/potenciometro.png"
  />
-
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/potenci%C3%B3metro%204.jpg"
+ />
 
 
 ### ejercicio n°5 Arduino: "Semáforo"
@@ -121,6 +124,8 @@ void loop() {
 
 ```
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/semaforo.png"
+ />
+ <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/sem%C3%A1foro%20fi.jpg"
  />
 
 ### ejercicio n°6 Arduino y processing "Potenciometro"
@@ -188,6 +193,8 @@ void draw()
 }
 ```
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/processing.png"
+ />
+ <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/potenci%C3%B3metro%20process.jpg"
  />
  ### Ejercicio N°7 Arduino+Processing: "Pulsador"
  ```js
@@ -352,6 +359,8 @@ void playTrack(int index) {
   currentTrack = index;
 }
 ```
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/botonera.jpg"
+ />
 
 
 
