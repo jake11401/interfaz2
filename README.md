@@ -367,7 +367,7 @@ void playTrack(int index) {
 
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/botonera.jpg"
  />
- ### Ejercicio Personal arduino: "if/else y potenciometro"
+ ### Ejercicio Personal arduino
  ```js
 // Pines de los potenciometros
 const int pot1 = A0;
