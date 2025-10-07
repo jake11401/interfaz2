@@ -33,7 +33,7 @@ void loop() {   // Se repite infinitamente
 ```
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/led%20parpadeante.png"
  />
- <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/led%20parpadeante%20fi.jpg"
+ <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/led%20parpadeante%202.jpg"
  />
 
 
