@@ -367,7 +367,45 @@ void playTrack(int index) {
 
 <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/botonera.jpg"
  />
+ ### Ejercicio Personal arduino: "if/else y potenciometro"
+ ```js
+// Pines de los potenciometros
+const int pot1 = A0;
+const int pot2 = A1;
 
+// Pines de los LEDs
+const int led1 = 2;
+const int led2 = 4;
+const int led3 = 3;
+const int led4 = 5;
+
+void setup() {
+  // Configuramos pines como salida
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(led4, OUTPUT);
+}
+
+void loop() {
+  // Leemos valores de los potenciometros (0 a 1023)
+  int valPot1 = analogRead(pot1);
+  int valPot2 = analogRead(pot2);
+
+  // Convertimos a rango PWM (0 a 255)
+  int brillo1 = map(valPot1, 0, 1023, 0, 255);
+  int brillo2 = map(valPot2, 0, 1023, 0, 255);
+
+  // Aplicamos el brillo con PWM
+  analogWrite(led1, brillo1);
+  analogWrite(led2, brillo1);
+
+  analogWrite(led3, brillo2);
+  analogWrite(led4, brillo2);
+}
+```
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/Captura%20de%20pantalla%202025-10-07%20114034.png"
+ />
 
 
 
