@@ -590,6 +590,10 @@ void draw() {
   }
 }
 ```
+<img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/ejercicio%20sensor%20sharp1.png"
+ />
+ <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/arduino%20sensor%20sharp.jpg"
+ />
 
 
 
