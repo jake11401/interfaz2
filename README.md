@@ -409,7 +409,7 @@ void loop() {
  <img src="https://raw.githubusercontent.com/jake11401/interfaz2/refs/heads/main/Img/1000102739.jpg"
  />
 
- ### Ejercicio 11 Processing: video Ascii
+ ### Ejercicio 11 Processing: "video Ascii"
  ```js
 import processing.video.*;
 
@@ -455,7 +455,7 @@ void draw() {
 }
 }
 ```
-### Ejercicio 12 Arduino: Video Glitch
+### Ejercicio 12 Arduino: "Video Glitch"
 ```js
 void setup() {
   Serial.begin(9600);
@@ -473,7 +473,7 @@ void loop() {
   delay(50);  // Delay to reduce data rate
 }
 ```
-### Ejercicio 13 Arduino: Sensor de humedad
+### Ejercicio 13 Arduino: "Sensor de humedad"
 ```js
 void setup() {
   Serial.begin(9600);
