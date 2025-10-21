@@ -507,7 +507,7 @@ void loop() {
   delay(50); // envío cada 50 ms
 }
 ```
-# Codigo processing
+#### Codigo processing
 ```js
 // --- Librerías necesarias ---
 import processing.serial.*;
